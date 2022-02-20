@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  db:
+    networks:
+      - points-of-interest-network
+    build:
+      context: ./docker-db
+      dockerfile: Dockerfile
+    ports:
+      - '5432:5432'
+networks:
+  points-of-interest-network:
+    driver: bridge

@@ -1,0 +1,4 @@
+FROM postgres:latest
+ENV POSTGRES_USER=bruno
+ENV POSTGRES_PASSWORD=123
+ENV POSTGRES_DB=pointsofinterestdb
